@@ -8,11 +8,13 @@
     <meta name="description" content="An app that allows users to post, edit, and create an online presence.">
     <meta name="keywords" content="blog, post, edit, create, online, presence, online presence">
     <title>My Tech Blog</title>
+    <link rel="stylesheet" href="../public/Assets/CSS/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../public/Assets/CSS/style.css">
+    
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 1500px}
@@ -58,14 +60,14 @@
           <div class="col-sm-3 sidenav">
             <br><br><br>
             <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#section1">Home</a></li>
-              <li><a href="#section2">Login</a></li>
-              <li><a href="#section3">Sign-up</a></li>
+              <li class="active" id="home"><a href="./index.html">Home</a></li>
+              <li id="sign-in"><a href="./views/sign-in.html">Login</a></li>
+              <li id="sign-up"><a href="./views/sign-up.html">Sign-up</a></li>
             </ul><br>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search Blog..">
+              <input type="text" class="form-control" id="search-field" placeholder="Search Blog..">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">
+                <button class="btn btn-default" id="search-btn" type="button">
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
               </span>
@@ -77,7 +79,7 @@
             <h4><small>RECENT POSTS</small></h4>
             <hr>
             <h2>I Love Summer</h2>
-            <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+            <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Aug 27, 2015.</h5>
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas lorem id sem pellentesque, eu pulvinar mi commodo. Donec est mi, rutrum malesuada lacus iaculis, tempus commodo tellus. Aliquam congue eros velit, et luctus turpis tristique vel. Morbi dictum quam dui, aliquet pharetra odio semper porttitor. In enim dui, sodales at libero a, sagittis rutrum nibh. Duis vitae diam dignissim mauris efficitur ornare. Proin sed condimentum libero. Nunc sagittis lorem tincidunt euismod imperdiet. Ut luctus iaculis ex at ullamcorper. </p>
             <br><br>
@@ -163,7 +165,8 @@
       <footer >
         <p class="footer">copyright&copy;2024 Karen Bourgeois</p>
       </footer>
-      
+    
+    <script src="./Assets/JS/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
