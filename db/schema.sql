@@ -30,8 +30,8 @@ CREATE TABLE 'posts' (
 CREATE TABLE 'comments' (
   'comment_id'                  int(18)                     PRIMARY KEY NOT NULL AUTO_INCREMENT,
   'content'                     text                        NOT NULL,
-  'user_id'                     int(18)                     NOT NULL,
-  'post_id'                     int(18)                     NOT NULL,
+  'user_id'                   
+  'post_id'                     
   'date_created'                datetime                    NOT NULL,
   FOREIGN KEY ('user_id') REFERENCES 'users' ('user_id'),
   FOREIGN KEY ('post_id') REFERENCES 'posts' ('post_id')
