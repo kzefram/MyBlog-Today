@@ -1,5 +1,3 @@
-const express = require('express');
-const app = express();
 
 
 document.addEventListener('DOMContentLoaded', function() {
