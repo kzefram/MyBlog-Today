@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add event listeners
     loginlink.addEventListener('click', function() {
-        window.location.href = './public/sign-in.html';
+        window.location.href = './public/views/sign-in.html';
     });
 
     signuplink.addEventListener('click', function() {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
     // Search form submit event
-    searchForm.addEventListener('submit', function(event) {
+    searchButton.addEventListener('subit', function(event) {
         event.preventDefault(); // Prevent the form from submitting normally
         // Perform search operation here
         console.log(`Searching for: ${searchInput.value}`);

@@ -28,13 +28,13 @@
     "express-session": "^1.18.0",
     "handlebars": "^4.7.8",
     "http": "^0.0.1-security",
-    "mongodb": "^6.4.0",
+    "mongodb": "^6.5.0",
     "mysql2": "^3.9.2",
-    "open": "^10.0.4",
     "postgresql": "^0.0.1",
     "sequelize": "^6.37.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "open": "^10.1.0"
   }
 }
