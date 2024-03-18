@@ -1,10 +1,13 @@
-const router = require('express').Router();
-const usersRoutes = require('./users-routes');
-const postRoutes = require('./posts-routes');
-const categoryRoutes = require('./category-routes');
+import { Router } from 'express';
+import usersRoutes from './users-routes';
+import postRoutes from './posts-routes';
+import categoryRoutes from './category-routes';
+
+const router = Router();
 
 router.use('/categories', categoryRoutes);
 router.use('/posts', postRoutes);
 router.use('/users', usersRoutes);
 
-module.exports = router;
+export default router;
+
