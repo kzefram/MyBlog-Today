@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Posts } = require('../models');
+const { Posts } = require('../../models');
 
 
 
@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
     
 });
   
-router.post('/', (req, res) => {
+router.get('/', (req, res) => {
     console.log("Request Object: ", req.body)
     
     Posts.create(req.body)
