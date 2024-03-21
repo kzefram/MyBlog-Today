@@ -1,13 +1,12 @@
-import express from 'express';
-import open from 'open';
-import sequelize from './config/connection.js';
-import apiRoutes from './routes/api/index.js';
+const express = require('express');
+const routes = require('./routes');
+const sequelize = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.static('public'));
-app.use('/api', apiRoutes);
+app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
 sequelize.sync().then(() => {

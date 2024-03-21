@@ -12,10 +12,10 @@ const seedAll = async () => {
   console.log('\n----- CATEGORIES SEEDED -----\n');
 
   await seedPosts();
-  console.log('\n----- PRODUCTS SEEDED -----\n');
+  console.log('\n----- POTS SEEDED -----\n');
 
   await seedComments();
-  console.log('\n----- TAGS SEEDED -----\n');
+  console.log('\n----- COMMENTS SEEDED -----\n');
 
   process.exit();
 };

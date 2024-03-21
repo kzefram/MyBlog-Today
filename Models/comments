@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
-import sequelize from './config/connection.js';
+const sequelize = require('../config/connection.js');
 
 class Comments extends Model {}
 
@@ -50,4 +50,4 @@ Comments.init(
   }
 );
 
-module.exports = Users;
+module.exports = Comments;
