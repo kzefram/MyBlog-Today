@@ -30,14 +30,19 @@
     - "bcrypt": "^5.1.1",
     - "connect-session-sequelize": "^7.1.7",
     - "dotenv": "^16.4.5",
+    - "express": "^4.18.3",
     - "express-handlebars": "^7.1.2",
     - "express-session": "^1.18.0",
     - "handlebars": "^4.7.8",
     - "http": "^0.0.1-security",
+    - "mongodb": "^6.5.0",
     - "mysql2": "^3.9.2",
+    - "postgresql": "^0.0.1",
     - "sequelize": "^6.37.1"
+
 - "devDependencies": 
-    - "nodemon": "^3.1.0"
+    - "nodemon": "^3.1.0",
+    - "open": "^10.1.0" 
 
 ## Installation
 
@@ -64,7 +69,11 @@
 ## Credits
 
 - Karen Bourgeois https://github.com/kzefram,
+- Ikechukwu Mbanugo,
+- Arnaldo Sepulveda
 - EDx
+- W3 Schools
+- Quill.com
 
 ## License
 
